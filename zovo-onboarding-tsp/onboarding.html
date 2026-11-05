@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to Cookie Manager Pro</title>
+<link rel="stylesheet" href="onboarding.css">
+</head>
+<body>
+<div class="bg-fx"></div>
+<div class="bg-grid"></div>
+
+<!-- top nav -->
+<nav class="topnav">
+  <div class="brand">
+    <span class="z"><b>zovo</b>.</span>
+    <span class="sep"></span>
+    <span class="prod">Cookie Manager Pro</span>
+  </div>
+  <a class="ghlink" href="https://github.com/theluckystrike" target="_blank" rel="noopener">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11 11 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+    Open source <span class="arr">↗</span>
+  </a>
+</nav>
+<div class="progress"><div class="progress-fill" id="progressFill"></div></div>
+
+<div class="stage" id="stage">
+
+  <!-- ============ STEP 1 · THE HOOK ============ -->
+  <section class="step active" data-step="1" data-next="Show me the fix">
+    <div class="center">
+      <span class="kicker">by Zovo · the cookie editor that skips DevTools</span>
+      <h1>Flipping one cookie value<br>means digging four DevTools<br>panels deep, <span class="em">every time</span>.</h1>
+      <p class="lede">Open DevTools, find the Application panel, expand Storage, click Cookies, hunt the row, edit it,
+        then reload. You do that dance to change a single value. Cookie Manager Pro puts every cookie one click from the
+        toolbar, editable right where you are.</p>
+
+      <div class="timeline-card">
+        <div class="tl dead"><span class="dot"></span> The DevTools way <span class="meta">four panels deep, then reload</span></div>
+        <div class="tl live"><span class="dot"></span> Cookie Manager Pro <span class="meta">one click, edit in place</span></div>
+      </div>
+
+      <div class="gauge">
+        <div class="row">
+          <span class="lbl">How far you dig to change one cookie in DevTools</span>
+          <span class="val">4<small>panels</small></span>
+        </div>
+        <div class="track"><div class="fill" style="width:86%"></div></div>
+        <div class="sub">Application, Storage, Cookies, then the exact row. Seven moves to touch one value, and you repeat
+          them on every site. This tool collapses all of it into a popup.</div>
+      </div>
+
+      <div class="chips-row">
+        <span class="chip-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Open source</span>
+        <span class="chip-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Zero data collection</span>
+        <span class="chip-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Manifest V3</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STEP 2 · INSTANT WIN ============ -->
+  <section class="step" data-step="2" data-next="Looks good, next">
+    <div class="center">
+      <span class="kicker">Watch it work · one popup</span>
+      <h2>Change a value in <span class="em">one click</span>.</h2>
+      <p class="lede">Click the toolbar icon and every cookie on the page is listed, named, and editable. Flip a role,
+        clear a session, fix an expiry, all without touching DevTools or reloading blind.</p>
+
+      <div class="demo">
+        <div class="demo-top">
+          <div class="demo-mem">14<small> cookies</small></div>
+          <div class="demo-cap">on this domain, all editable in place</div>
+        </div>
+        <div class="demo-tabs">
+          <div class="dtab"><span class="fav"></span><span class="nm">session_role &nbsp; <span style="color:var(--text-4);text-decoration:line-through">user</span> &nbsp;→&nbsp; <span style="color:var(--mint)">admin</span></span><span class="badge active">saved</span></div>
+          <div class="dtab"><span class="fav"></span><span class="nm">auth_token &nbsp; <span style="color:var(--text-3)">eyJhbGciOi…</span></span><span class="idle">JWT</span></div>
+          <div class="dtab"><span class="fav"></span><span class="nm">cart_id &nbsp; <span style="color:var(--text-3)">c_82f1a9</span></span><span class="idle">HttpOnly</span></div>
+          <div class="dtab"><span class="fav"></span><span class="nm">consent &nbsp; <span style="color:var(--text-3)">tracking</span></span><span class="idle">Secure</span></div>
+        </div>
+      </div>
+      <p class="demo-note">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Every edit stays on your machine. Nothing leaves the browser, nothing is logged.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ STEP 3 · MAKE IT YOURS ============ -->
+  <section class="step" data-step="3" data-next="Save and continue">
+    <div class="center">
+      <span class="kicker">30 seconds to set your guardrails</span>
+      <h2>Make it <span class="em">yours</span>.</h2>
+      <p class="lede">Sensible defaults are already on. Tune the safety rails and shortcuts to how you work.</p>
+
+      <div class="setup">
+        <div class="opt">
+          <label class="opt-lbl">Never auto-delete cookies from these sites</label>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" checked data-domain="mail.google.com"><span>Gmail</span></label>
+            <label class="chip"><input type="checkbox" checked data-domain="github.com"><span>GitHub</span></label>
+            <label class="chip"><input type="checkbox" checked data-domain="localhost"><span>localhost</span></label>
+            <label class="chip"><input type="checkbox" data-domain="figma.com"><span>Figma</span></label>
+            <label class="chip"><input type="checkbox" data-domain="notion.so"><span>Notion</span></label>
+            <label class="chip"><input type="checkbox" data-domain="stripe.com"><span>Stripe</span></label>
+          </div>
+        </div>
+        <div class="opt">
+          <label class="opt-lbl">Default export format</label>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="fmt" checked><span>JSON</span></label>
+            <label class="chip"><input type="radio" name="fmt"><span>Netscape</span></label>
+            <label class="chip"><input type="radio" name="fmt"><span>CSV</span></label>
+          </div>
+        </div>
+        <div class="opt tgls">
+          <div class="tgl-row"><span>Read-only mode to block accidental edits</span>
+            <label class="tgl"><input type="checkbox"><span class="tgl-s"></span></label></div>
+          <div class="tgl-row"><span>Confirm before clearing a whole domain</span>
+            <label class="tgl"><input type="checkbox" checked><span class="tgl-s"></span></label></div>
+          <div class="tgl-row"><span>Decode JWT cookies the moment one is spotted</span>
+            <label class="tgl"><input type="checkbox" checked><span class="tgl-s"></span></label></div>
+          <div class="tgl-row"><span>Flag insecure cookies in the list</span>
+            <label class="tgl"><input type="checkbox" checked><span class="tgl-s"></span></label></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STEP 4 · A YEAR IN THE MAKING ============ -->
+  <section class="step" data-step="4" data-next="See who built it">
+    <div class="center">
+      <span class="kicker">Not a weekend project</span>
+      <h2>A year in the <span class="em">making</span>.</h2>
+      <p class="lede">Roughly a year of full-time work by one senior engineer. Built in the open, tested against the messy
+        cookies real sites set, and shipped safe. It is a real product, not a hobby.</p>
+
+      <div class="proof-grid">
+        <div class="proof-card"><div class="pv accent">~1 yr</div><div class="pl">full-time development</div></div>
+        <div class="proof-card"><div class="pv mint">MV3</div><div class="pl">modern, sandboxed, no remote code</div></div>
+        <div class="proof-card"><div class="pv accent">100%</div><div class="pl">open source on GitHub (MIT)</div></div>
+        <div class="proof-card"><div class="pv mint">0</div><div class="pl">trackers, nothing sold, ever</div></div>
+      </div>
+
+      <div class="works-note">
+        It also does the careful things right. JWT cookies decode into readable header and payload without a round trip to
+        some website. The health view scores your Secure, HttpOnly, and SameSite flags and points out the risky ones.
+        Read-only mode guards you from a stray edit on a live session, and every cookie change happens locally, so nothing
+        about your browsing ever leaves the machine.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STEP 5 · BUILT BY SOMEONE YOU CAN REACH ============ -->
+  <section class="step" data-step="5" data-next="See the Pro plan">
+    <div class="center">
+      <span class="kicker">The anti-faceless promise</span>
+      <h2>Built by someone you can <span class="em">actually reach</span>.</h2>
+      <p class="lede">Most cookie tools are anonymous, and the abandoned ones quietly rot until a Chrome update breaks
+        them. This one has a name, an inbox, and a year of work staked on it. The name is Michael Ip, founder of Zovo.</p>
+
+      <div class="receipts">
+        <span class="receipt"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>Contributes to open-source projects</span>
+        <span class="receipt"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>20 Chrome extensions shipped</span>
+      </div>
+
+      <div class="reach-cards">
+        <div class="reach-card">
+          <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" fill="none"/><path d="M22 6l-10 7L2 6"/></svg></div>
+          <div class="bd"><span class="ttl">Email the person who wrote the code</span><span>A cookie edge case trips it up, or a Chrome update shifts something? You reach Michael directly at <a href="mailto:support@zovo.one">support@zovo.one</a>, and bugs get read and fixed fast, often the same week.</span></div>
+        </div>
+        <div class="reach-card">
+          <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg></div>
+          <div class="bd"><span class="ttl">You shape the roadmap</span><span>Tell him what a cookie workflow is missing and it can land in the next build. Pro members' requests jump the queue by design, so you steer a tool that gets better every month.</span></div>
+        </div>
+        <div class="reach-card">
+          <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div class="bd"><span class="ttl">Good for both of us, long term</span><span>Paying keeps a named developer full-time on the thing you rely on, so it never becomes the next dead extension up for sale. You get software that keeps improving. He gets to keep improving it.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STEP 6 · FOUNDER + PRICING ============ -->
+  <section class="step" data-step="6">
+    <div class="center">
+      <span class="kicker">Zovo Pro · built by one accountable developer</span>
+      <h2>Own your cookies <span class="em">completely</span>.</h2>
+      <p class="lede">Free edits, searches, and clears cookies on any site. Pro adds the power tools, saved profiles,
+        scheduled cleanup, JWT decoding, and a health view that catches what you would miss.</p>
+
+      <div class="founder">
+        <img class="pic" src="assets/michael-lip.png" alt="Michael Ip">
+        <div class="body">
+          <div class="nm">Michael Ip
+            <svg class="verified" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 1.8 3-.2 1 2.8 2.6 1.4-.6 2.9 1.4 2.6-2 2.2.2 3-2.8.9-1.4 2.6-2.9-.7-2.5 1.6-2.5-1.6-2.9.7L6.9 21l-2.8-.9.2-3-2-2.2 1.4-2.6-.6-2.9L5.7 6l1-2.8 3 .2z"/><path d="M10.5 13.5l-2-2L7 13l3.5 3.5L17 10l-1.5-1.5z" fill="#05030f"/></svg>
+            <span class="role">· founder, Zovo</span>
+          </div>
+          <p class="cred">Solo developer · 20 Chrome extensions · contributes to open-source projects.</p>
+          <div class="socials">
+            <a href="https://github.com/theluckystrike" target="_blank" rel="noopener">theluckystrike</a>
+            <a href="https://x.com/_alphashark_" target="_blank" rel="noopener">@_alphashark_</a>
+            <a href="mailto:support@zovo.one">Email me</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing">
+        <div class="pcard">
+          <div class="seg" id="planSeg">
+            <button data-plan="monthly" class="on">Monthly</button>
+            <button data-plan="lifetime">Lifetime <span class="flag">best value</span></button>
+          </div>
+          <div class="price" id="priceRow">
+            <span class="amt" id="priceAmt">$4.99</span><span class="per" id="pricePer">/ month</span>
+          </div>
+          <div class="price-sub" id="priceSub">Billed monthly</div>
+
+          <div class="pfeat">
+            <div class="pf"><div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h11l5 5v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/><path d="M8 4v5h7"/></svg></div><div class="tx"><span class="ttl">Cookie profiles</span><span>Save a whole cookie set per environment, load it back in one click.</span></div></div>
+            <div class="pf"><div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg></div><div class="tx"><span class="ttl">Auto-delete rules</span><span>Set unlimited scheduled rules to clear cookies by domain or pattern.</span></div></div>
+            <div class="pf"><div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h4M7 13h6"/></svg></div><div class="tx"><span class="ttl">JWT decoder</span><span>Read the header and payload of any token cookie inline, no round trip.</span></div></div>
+            <div class="pf"><div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div><div class="tx"><span class="ttl">Health dashboard</span><span>Score Secure, HttpOnly, and SameSite flags, then clean trackers in one tap.</span></div></div>
+          </div>
+
+          <div class="reassure-row">
+            <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg><span id="reassure1">Secure checkout</span></span>
+            <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>Cancel anytime</span>
+            <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg>30-day money-back</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq" id="faq">
+        <div class="faq-item"><button class="faq-q">Does it read or send my cookies anywhere?<span class="pm">+</span></button>
+          <div class="faq-a"><p>No. Every line is open source under the MIT license and it collects zero data. Cookies are read and edited locally in your browser. No analytics, no servers, nothing to sell.</p></div></div>
+        <div class="faq-item"><button class="faq-q">What stays free and what needs Pro?<span class="pm">+</span></button>
+          <div class="faq-a"><p>Viewing, searching, editing, creating, deleting, importing, and one auto-delete rule stay free forever. Pro adds saved profiles, unlimited rules, the JWT decoder, the health dashboard, and advanced export formats.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Can I cancel?<span class="pm">+</span></button>
+          <div class="faq-a"><p>Anytime, in one click. Lifetime is a single $99 with a 30-day money-back guarantee, so there is zero risk.</p></div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ STEP 7 · ALL SET + FOUNDER SIGN-OFF ============ -->
+  <section class="step" data-step="7" data-next="Start using it">
+    <div class="center">
+      <div class="done-ic"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+      <span class="kicker mint">Ready on every tab</span>
+      <h2>You're all set.</h2>
+      <p class="lede">Cookie Manager Pro is live. Open any site, click the icon, and every cookie is right there to view,
+        edit, or clear. No DevTools, no reload guesswork.</p>
+
+      <div class="pin">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 17v5"/><path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"/></svg>
+        Tip. Click the puzzle icon in Chrome's toolbar and pin Cookie Manager Pro so it is one click away.
+      </div>
+
+      <div class="sc-title">Quick actions in the right-click menu</div>
+      <div class="shortcuts">
+        <div class="sc"><span class="keys"><kbd>Right-click</kbd></span>Open Cookie Manager</div>
+        <div class="sc"><span class="keys"><kbd>Right-click</kbd></span>Clear cookies for this site</div>
+        <div class="sc"><span class="keys"><kbd>Right-click</kbd></span>Export cookies for this site</div>
+        <div class="sc"><span class="keys"><kbd>Right-click</kbd></span>Open Cookie Manager settings</div>
+      </div>
+
+      <div class="toolkit">
+        <div class="toolkit-head"><span class="t">Part of the Zovo toolkit</span>
+          <a href="https://www.zovo.one" target="_blank" rel="noopener">All extensions ↗</a></div>
+        <div class="tk-item"><div><div class="tn">BeLikeNative</div><div class="td">Rewrite any text, on any site</div></div><span class="meta">Chrome extension</span></div>
+        <div class="tk-item"><div><div class="tn">Join Zovo · shape the roadmap</div><div class="td">Vote on what gets built next, and members get every extension</div></div><span class="meta">↗</span></div>
+      </div>
+
+      <!-- founder sign-off -->
+      <div class="signoff">
+        <div class="signoff-head">
+          <img class="pic" src="assets/michael-lip.png" alt="Michael Ip">
+          <div class="who">
+            <div class="nm">Michael Ip
+              <svg class="verified" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 1.8 3-.2 1 2.8 2.6 1.4-.6 2.9 1.4 2.6-2 2.2.2 3-2.8.9-1.4 2.6-2.9-.7-2.5 1.6-2.5-1.6-2.9.7L6.9 21l-2.8-.9.2-3-2-2.2 1.4-2.6-.6-2.9L5.7 6l1-2.8 3 .2z"/><path d="M10.5 13.5l-2-2L7 13l3.5 3.5L17 10l-1.5-1.5z" fill="#05030f"/></svg>
+            </div>
+            <div class="role">a note from the person who built this</div>
+          </div>
+        </div>
+        <p>I got tired of the DevTools dance. Every time I needed to flip a session flag or clear one stubborn cookie, it
+          was four panels deep and a blind reload. So I built the editor I wanted, cookies in a popup, values you edit in
+          place, JWTs you can actually read, and a health view that tells you which cookies are exposed.</p>
+        <p>It is open source, it collects nothing, and every line sits on GitHub where you can read it. If something breaks
+          or you wish it did one more thing, tell me. The same person who wrote the code reads and fixes it. That is the deal.</p>
+        <div class="sig">Michael</div>
+        <div class="reach">
+          <a href="mailto:support@zovo.one">support@zovo.one</a>
+          <a href="https://github.com/theluckystrike" target="_blank" rel="noopener">github.com/theluckystrike</a>
+          <a href="https://x.com/_alphashark_" target="_blank" rel="noopener">@_alphashark_</a>
+        </div>
+        <p class="ps">P.S. Lifetime is $99 once and it covers every Zovo tool I ever ship, not just this one. Whichever you
+          pick, thank you for trusting a real developer over a faceless one. Now go edit a cookie the fast way.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- bottom nav -->
+<div class="navbar">
+  <div class="navbar-in">
+    <button class="nbtn back" id="backBtn" hidden>
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>Back
+    </button>
+    <div class="indicator">
+      <span class="counter" id="counter">01 / 07</span>
+      <div class="dots" id="dots">
+        <button class="dot active" data-step="1" aria-label="Step 1"></button>
+        <button class="dot" data-step="2" aria-label="Step 2"></button>
+        <button class="dot" data-step="3" aria-label="Step 3"></button>
+        <button class="dot" data-step="4" aria-label="Step 4"></button>
+        <button class="dot" data-step="5" aria-label="Step 5"></button>
+        <button class="dot" data-step="6" aria-label="Step 6"></button>
+        <button class="dot" data-step="7" aria-label="Step 7"></button>
+      </div>
+    </div>
+    <button class="nbtn next" id="nextBtn">
+      <span id="nextLabel">Show me the fix</span>
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </button>
+  </div>
+</div>
+
+<script src="onboarding.js"></script>
+</body>
+</html>
